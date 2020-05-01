@@ -11,6 +11,7 @@
 
     <!-- Demo styles -->
     <style>
+
         html, body {
             position: relative;
             height: 100%;
@@ -49,6 +50,16 @@
             -webkit-align-items: center;
             align-items: center;
         }
+
+        /* .pagination_box {
+          display: flex;
+          justify-content: center;
+        } */
+
+        .swiper-pagination {
+
+        }
+
     </style>
 
 </head>
@@ -69,10 +80,18 @@
       <div class="swiper-slide">Slide 9</div>
       <div class="swiper-slide">Slide 10</div>
     </div>
+
     <!-- Add Arrows -->
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
-  </div>
+
+    <!-- Add Pagination -->
+    <!-- <div class="pagination_box"> -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+    
+    
 
 
     <!-- Swiper JS -->
@@ -86,6 +105,11 @@
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
     });
   </script>
 
